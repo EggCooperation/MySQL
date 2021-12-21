@@ -1,0 +1,36 @@
+
+/*Utilizando INNER JOIN SIN MORIR EN EL INTENTO*/
+
+/*
+SELECT tablaBase.ColumnaA,
+       tablaObjetivo1.ColumnaB,
+       tablaObjetivo2.ColumnaC
+FROM tablaBase
+INNER JOIN tablaObjetivo1
+ON tablaBase.llaveForanea = tablaObjetivo1.llavePrimaria      (Como se conecta tablaBase con tablaObjetivo1)
+INNER JOIN tablaObjetivo2
+ON tablaBase.llaveForanea = tablaObjetivo2.llavePrimaria; */  (Como se conecta tablaBase con tablaObjetivo2)
+
+
+
+RECORDATORIO:
+Es recomendable, utilizar los diagramas ERR para entender mis relaciones, como se vinculan las tablas.
+tablaBase --> Elijo la que quiera, preferentemente la que tenga mas LLAVES FORANEAS (Es decir, mas vinculaciones)
+tablaObjetivo --> Puedo tener las uniones que desee.
+SER ORDENADOS.
+En la linea de codigo del SELECT, es conveniente traer las columnas de mi tabla base 
+En la segunda linea de codigo, traigo las columnas de mi tablaObjetivo 1 
+<<Asi sucecivamente>>
+PUEDO utilizar un "alias o variable de asignacion" para mis tablas, declarandolas luego del nombre de la tabla. 
+Esto me evita tener que escribir el nombre completo de la tabla.
+EJ:
+
+/*
+SELECT a.ColumnaA,
+       b.ColumnaB,
+       c.ColumnaC
+FROM tablaBase a
+INNER JOIN tablaObjetivo1 b
+ON a.llaveForanea = b.llavePrimaria
+INNER JOIN tablaObjetivo2 c
+ON a.llaveForanea = c.llavePrimaria; */
